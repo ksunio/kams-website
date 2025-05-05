@@ -125,7 +125,7 @@
  
   .page-heading {
    font-size: clamp(2.34rem, 7.8vw, 3.25rem); 
-   margin-top: 1rem;
+   margin-top: 2rem;
    margin-bottom: var(--spacing-md);
   }
  }
