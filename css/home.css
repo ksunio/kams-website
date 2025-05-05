@@ -1,0 +1,97 @@
+
+
+.container {
+  
+  
+   
+  justify-content: space-between; 
+  overflow: hidden; 
+ }
+ 
+ .content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  width: 100%;
+  
+  align-items: center;
+  margin-top: 0rem; 
+  margin-bottom: var(--spacing-xs); 
+  min-height: 50vh; 
+ }
+ 
+.photo-grid-container {
+  width: 100vw;
+  max-width: 100%; 
+  overflow: hidden;
+  
+  margin-left: calc(-1 * var(--container-padding));
+  margin-right: calc(-1 * var(--container-padding));
+  
+  position: relative;
+}
+ 
+ .photo-grid {
+  display: flex;
+  gap: var(--spacing-xl); 
+  width: fit-content; 
+  margin: 0;
+  padding: var(--spacing-md) 0; 
+  position: relative; 
+  white-space: nowrap; 
+  animation: continuousScroll 25s linear infinite; 
+  will-change: transform; 
+  justify-content: flex-start; 
+ }
+ 
+ @keyframes continuousScroll {
+  0% {
+   transform: translateX(0);
+  }
+  100% {
+   transform: translateX(-50%); 
+  }
+ }
+ 
+ .photo-grid:hover {
+  animation-play-state: paused;
+  cursor: grab;
+ }
+ 
+ .photo-grid:active {
+  cursor: grabbing;
+ }
+ 
+.gallery-image {
+  flex: 0 0 auto;
+  
+  
+  height: clamp(18rem, 60vh, 30rem); 
+  display: flex;
+  align-items: center;
+ }
+ .photo {
+  height: 100%; 
+  width: auto; 
+  max-width: none; 
+  object-fit: contain; 
+  display: block; 
+ }
+ 
+ 
+ 
+ 
+ @media (max-width: 480px) {
+  .photo-grid {
+   gap: var(--spacing-lg); 
+   animation-duration: 20s; 
+  }
+  .gallery-image {
+   
+   height: clamp(10rem, 40vh, 18rem); 
+  }
+  
+  
+ }
+ 

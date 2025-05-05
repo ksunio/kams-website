@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | KAMS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="KAMS_icon.png?" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-heading">Let's connect.</h1>
+
+      <form
+        class="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="c67d5315-03e0-465f-a308-b37beb5bad2c"
+        />
+        <label for="name" class="sr-only">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-input"
+          name="name"
+          placeholder="Name"
+          required
+        />
+
+        <label for="email" class="sr-only">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-input"
+          name="email"
+          placeholder="Email"
+          required
+        />
+
+        <label for="message" class="sr-only">Message</label>
+        <textarea
+          id="message"
+          class="form-textarea"
+          name="message"
+          placeholder="Message"
+          required
+        ></textarea>
+
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+        <button type="submit" class="form-button">Send</button>
+      </form>
+
+      <div class="social-icons">
+        <a
+          href="https://linkedin.com/in/ksunio"
+          class="social-icon"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="images/linkedin_icon_white.png"
+            alt="LinkedIn"
+            class="social-icon-img"
+          />
+        </a>
+      </div>
+
+      <nav class="nav">
+        <a href="portfolio-selection.html" class="nav-item">Portfolio</a>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+      </nav>
+    </div>
+
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+  </body>
+</html>

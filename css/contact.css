@@ -1,0 +1,134 @@
+
+
+
+.page-heading {
+  
+  font-family: var(--font-body); 
+  font-weight: normal; 
+  text-align: center;
+  font-size: clamp(
+   2rem,
+   5vw,
+   3rem
+  );  
+  margin-top: var(--spacing-xxl); 
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-color); 
+ }
+ 
+ .contact-form {
+  max-width: 450px; 
+  margin: var(--spacing-lg) auto; 
+ }
+ 
+ .form-input,
+ .form-textarea {
+  font-family: var(--font-body); 
+  font-size: 1rem; 
+  width: 100%;
+  
+  padding: 0.75em;
+  margin-bottom: var(--spacing-md); 
+  background-color: #363b44; 
+  border: none;
+  color: var(--text-color); 
+  display: block; 
+  box-sizing: border-box; 
+ }
+ 
+ .form-textarea {
+  
+  min-height: 150px; 
+  resize: vertical; 
+  line-height: 1.5; 
+ }
+ 
+ .form-button {
+  font-family: var(--font-body); 
+  font-size: 1rem; 
+  display: block;
+  
+  width: auto; 
+  min-width: 140px; 
+  padding: 0.75em 1.5em; 
+  margin: var(--spacing-lg) auto; 
+  background-color: var(--nav-bg-color); 
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease;
+  text-align: center;
+ }
+ 
+ .form-button:hover {
+  background-color: var(
+   --nav-hover-bg-color
+  ); 
+ }
+ 
+ 
+ .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md); 
+  margin: var(--spacing-lg) 0; 
+ }
+ 
+ .social-icon {
+  
+  color: var(--link-color); 
+  line-height: 0; 
+  display: inline-block; 
+ }
+ 
+ .social-icon-img {
+  
+  width: 35px; 
+  height: auto; 
+  transition: opacity var(--transition-speed) ease; 
+ }
+ 
+ .social-icon:hover .social-icon-img {
+  opacity: 0.8; 
+ }
+ 
+ 
+ @media (max-width: 500px) {
+  .contact-form {
+   max-width: 90%; 
+   margin-top: var(--spacing-md);
+   margin-bottom: var(--spacing-md);
+  }
+ 
+  .form-input,
+  .form-textarea {
+   
+   
+   padding: 0.6em; 
+   margin-bottom: var(--spacing-sm);
+  }
+ 
+  .form-textarea {
+   min-height: 120px; 
+  }
+ 
+  .form-button {
+   padding: 0.6em 1.2em; 
+   min-width: 120px; 
+   margin-top: var(--spacing-md);
+  }
+ 
+  .social-icon-img {
+   width: 30px; 
+  }
+ 
+  .page-heading {
+   font-size: clamp(2.34rem, 7.8vw, 3.25rem); 
+   margin-top: 1rem;
+   margin-bottom: var(--spacing-md);
+  }
+ }
+ 
+ 
+ 

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering | KAMS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="KAMS_icon.png?" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/engineering-portfolio.css" />
+
+    <style>
+      .sim-card::after {
+        display: block;
+        font-size: 0.8rem;
+        color: #aaa;
+        margin-top: 5px;
+        font-style: italic;
+      }
+
+      .sim-image {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .sim-image:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="logo">Portfolio</h1>
+
+      <h2>Engineering.</h2>
+
+      <div class="horizontal-scroll-container">
+        <div class="horizontal-scroll-content">
+          <div class="sim-card">
+            <div class="sim-image-wrapper">
+              <img
+                src="images/1_PHYS231_midterm2_apollo13.gif"
+                alt="Apollo 13 Simulation"
+                class="sim-image"
+              />
+            </div>
+            <div class="sim-caption">
+              <a
+                href="https://www.glowscript.org/#/user/kams/folder/MyPrograms/program/Apollo13new"
+                >I. Apollo 13 Simulation</a
+              >
+            </div>
+          </div>
+          <div class="sim-card">
+            <div class="sim-image-wrapper">
+              <img
+                src="images/2_phys231_final_doublePendulum.gif"
+                alt="Double Pendulum Simulation"
+                class="sim-image"
+              />
+            </div>
+            <div class="sim-caption">
+              <a
+                href="https://www.glowscript.org/#/user/kams/folder/MyPrograms/program/DoublePendulum"
+                >II. Double Pendulum Simulation</a
+              >
+            </div>
+          </div>
+          <div class="sim-card">
+            <div class="sim-image-wrapper">
+              <img
+                src="images/3_phys232_midterm1_mirage.gif"
+                alt="Mirage Simulation"
+                class="sim-image"
+              />
+            </div>
+            <div class="sim-caption">
+              <a href="https://trinket.io/glowscript/3ae09a9128c6"
+                >III. Mirage Simulation</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="more-physics">... more physics!!</p>
+
+      <div class="section-title">
+        <h3>IV. Charged particles' behavior towards Earth's magnetic field.</h3>
+
+        <iframe
+          src="https://trinket.io/embed/glowscript/1d520f9c8a91"
+          width="100%"
+          height="356"
+          frameborder="0"
+          marginwidth="0"
+          marginheight="0"
+          allowfullscreen
+        ></iframe>
+
+        <h4>Electrons</h4>
+      </div>
+
+      <div class="vertical-grid">
+        <div class="grid-item">
+          <img
+            src="images/4_phys232_midterm2_magneticFields/magneticFields_1_electron.gif"
+            alt="Electron Simulation 1"
+            class="sim-image"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            src="images/4_phys232_midterm2_magneticFields/magneticFields_2_electron.gif"
+            alt="Electron Simulation 2"
+            class="sim-image"
+          />
+        </div>
+        <div class="grid-item full-width">
+          <img
+            src="images/4_phys232_midterm2_magneticFields/magneticFields_3_electron.gif"
+            alt="Electron Simulation 3"
+            class="sim-image"
+          />
+        </div>
+      </div>
+
+      <div class="section-title" id="proton-section">
+        <h4>Protons</h4>
+      </div>
+
+      <div class="vertical-grid">
+        <div class="grid-item">
+          <img
+            src="images/4_phys232_midterm2_magneticFields/magneticFields_4_proton.gif"
+            alt="Proton Simulation 1"
+            class="sim-image"
+          />
+        </div>
+        <div class="grid-item">
+          <img
+            src="images/4_phys232_midterm2_magneticFields/magneticFields_5_protonCloseup.png"
+            alt="Proton Simulation 2"
+            class="sim-image"
+          />
+        </div>
+      </div>
+
+      <div class="section-title">
+        <h3>V. Gauss's Law Simulation</h3>
+        <iframe
+          src="https://trinket.io/embed/glowscript/48470b7b9a8f"
+          width="100%"
+          height="356"
+          frameborder="0"
+          marginwidth="0"
+          marginheight="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="vertical-grid">
+        <div class="grid-item">
+          <img
+            src="images/5_phys232_final_gaussLaw/origin.png"
+            alt="Gauss Law P1 Origin"
+            class="sim-image"
+          />
+          <div class="sim-caption-gauss">Charge is at the origin</div>
+        </div>
+        <div class="grid-item">
+          <img
+            src="images/5_phys232_final_gaussLaw/inside.png"
+            alt="Gauss Law P2 Inside"
+            class="sim-image"
+          />
+          <div class="sim-caption-gauss">Charge is inside the cube</div>
+        </div>
+        <div class="grid-item full-width">
+          <img
+            src="images/5_phys232_final_gaussLaw/outside.png"
+            alt="Gauss Law Simulation P3 Outside"
+            class="sim-image"
+          />
+          <div class="sim-caption-gauss">Charge is outside the cube</div>
+        </div>
+      </div>
+
+      <div style="padding-left: 4em; text-indent: -4em" class="publications">
+        <h3>Publications</h3>
+        <ul>
+          <li>
+            <cite>
+              Miller B., Hasbrouck S., Udrea B., Sunio K.A., Leonida A. (2021).
+              <i
+                >Development of Human-Machine Collaborative Systems through Use
+                of Observe-Orient-Decide-Act (OODA) Loop</i
+              >. American Institute of Aeronautics and Astronautics (AIAA)
+              ASCEND (p. 4092).
+              <a
+                style="padding-left: 4em; text-indent: -4em"
+                href="https://doi.org/10.2514/6.2021-4092"
+                target="_blank"
+                >https://doi.org/10.2514/6.2021-4092</a
+              >
+            </cite>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav">
+        <a href="about.html" class="nav-item">About</a>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </div>
+    </div>
+    <script src="js/lightbox.js"></script>
+  </body>
+</html>
