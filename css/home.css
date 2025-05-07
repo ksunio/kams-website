@@ -1,9 +1,4 @@
-
-
-.container {
-  
-  
-   
+.container {   
   justify-content: space-between; 
   overflow: hidden; 
  }
@@ -79,9 +74,6 @@
   display: block; 
  }
  
- 
- 
- 
  @media (max-width: 480px) {
   .photo-grid {
    gap: var(--spacing-lg); 
@@ -91,7 +83,6 @@
    
    height: clamp(10rem, 40vh, 18rem); 
   }
-  
   
  }
  

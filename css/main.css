@@ -1,7 +1,8 @@
 @font-face {
-  font-family: 'Consolas'; 
-  src: url('fonts/Consolas.ttf');
+  font-family: 'Vogue'; 
+  src: url('../fonts/Vogue.ttf') format('truetype');
  }
+
  :root {
   
   --bg-color: #21262d;
@@ -10,11 +11,8 @@
   --nav-hover-bg-color: #2c2c2c;
   --link-color: white; 
  
-  
   --font-logo: 'Vogue', serif;
   --font-body: 'Times', serif;
-  --font-code: 'Consolas', monospace; 
- 
   
   --spacing-xs: 0.25rem; 
   --spacing-sm: 0.5rem; 
