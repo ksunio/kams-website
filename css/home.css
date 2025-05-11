@@ -49,19 +49,8 @@
   }
  }
  
- .photo-grid:hover {
-  animation-play-state: paused;
-  cursor: grab;
- }
- 
- .photo-grid:active {
-  cursor: grabbing;
- }
- 
 .gallery-image {
   flex: 0 0 auto;
-  
-  
   height: clamp(18rem, 60vh, 30rem); 
   display: flex;
   align-items: center;
