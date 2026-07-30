@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archive | KAMS</title>
+    <link rel="shortcut icon" type="image/png" href="KAMS_icon.png?" />
+    <link rel="icon" type="image/png" href="KAMS_icon.png?" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/archive-portfolio.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo logo-full">KIM ASHLEY SUNIO</div>
+      <div class="logo logo-short">KAMS</div>
+
+      <h1 class="archive-title">Archive</h1>
+
+      <div class="archive-gallery">
+        <figure class="archive-item">
+          <img
+            src="images/2026/sailing-race-ghost-1.JPG"
+            alt="Archive photograph"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure class="archive-item">
+          <img
+            src="images/2026/american-flag-1.JPG"
+            alt="Archive photograph"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure class="archive-item">
+          <img
+            src="images/2026/sailing-race-ghost-2.JPG"
+            alt="Archive photograph"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure class="archive-item">
+          <img
+            src="images/2026/tennis-1.jpg"
+            alt="Archive photograph"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure class="archive-item">
+          <img
+            src="images/2026/candid-1.JPG"
+            alt="Archive photograph"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure class="archive-item">
+          <img
+            src="images/2026/tennis-2.JPG"
+            alt="Archive photograph"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure class="archive-item">
+          <img
+            src="images/2026/portrait-1.jpg"
+            alt="Archive photograph"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+      <div
+        class="lightbox"
+        id="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Expanded photograph"
+        hidden
+      >
+        <button
+          class="lightbox-close"
+          type="button"
+          aria-label="Close photograph"
+        >
+          &times;
+        </button>
+
+        <img class="lightbox-image" src="" alt="" />
+      </div>
+
+      <nav class="nav">
+        <a href="about.html" class="nav-item">About</a>
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+    </div>
+    <script>
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImage = lightbox.querySelector(".lightbox-image");
+      const closeButton = lightbox.querySelector(".lightbox-close");
+      const galleryImages = document.querySelectorAll(".archive-item img");
+
+      let previouslyFocusedImage = null;
+
+      function openLightbox(image) {
+        previouslyFocusedImage = image;
+
+        lightboxImage.src = image.currentSrc || image.src;
+        lightboxImage.alt = image.alt;
+        lightbox.hidden = false;
+
+        document.body.classList.add("lightbox-open");
+        closeButton.focus();
+      }
+
+      function closeLightbox() {
+        lightbox.hidden = true;
+        lightboxImage.src = "";
+
+        document.body.classList.remove("lightbox-open");
+
+        if (previouslyFocusedImage) {
+          previouslyFocusedImage.focus();
+        }
+      }
+
+      galleryImages.forEach((image) => {
+        image.tabIndex = 0;
+        image.setAttribute("role", "button");
+        image.setAttribute("aria-label", `View ${image.alt || "photograph"}`);
+
+        image.addEventListener("click", () => {
+          openLightbox(image);
+        });
+
+        image.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openLightbox(image);
+          }
+        });
+      });
+
+      closeButton.addEventListener("click", closeLightbox);
+
+      lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !lightbox.hidden) {
+          closeLightbox();
+        }
+      });
+    </script>
+  </body>
+</html>
